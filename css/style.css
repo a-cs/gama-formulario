@@ -1,0 +1,92 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#cadastro {
+	background-color: #e9e9e9;
+	border-radius: 8px;
+	width: 96%;
+	margin: 20px auto;
+}
+
+#cadastro fieldset {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	font-size: 24px;
+	font-weight: 700;
+	border-radius: 10px;
+	width: 86%;
+	margin: 0 auto;
+	/* padding: 12px 0; */
+}
+
+
+.input-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+.input-container label {
+	font-size: 20px;
+	font-weight: 600;
+	text-align: justify;
+}
+
+.input-container input {
+	margin: 8px 0;
+	width: 160px;
+	height: 28px;
+	font-size: 20px;
+	font-weight: 400;
+	padding: 8px 12px;
+	border-radius: 20px;
+
+}
+
+#cadastro input[type=submit] {
+	font-size: 28px;
+	font-weight: 600;
+	padding: 8px 12px;
+	border-radius: 20px;
+	background-color: #52c05d;
+	color: whitesmoke;
+	border: 1px solid whitesmoke;
+	transition: 0.2s;
+}
+
+#cadastro input[type=submit]:hover {
+	background-color: #5cd468;
+}
+
+@media (min-width: 700px) {
+
+	#cadastro fieldset legend {
+		font-size: 32px;
+	}
+	.input-container {
+		flex-direction: column;
+	}
+
+	.input-container label {
+		font-size: 28px;
+		margin: 4px 0;
+	}
+
+	.input-container input {
+		width: 80%;
+		height: 32px;
+		font-size: 28px;
+	}
+
+	#cadastro input[type=submit] {
+		margin-top: 8px;
+		font-size: 32px;
+	}
+}
+
